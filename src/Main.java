@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+/**
+ * Clase Main
+ * Interfaz de usuario en consola para operar la calculadora.
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -7,6 +10,7 @@ public class Main {
         boolean salir = false;
 
         while (!salir) {
+            //Menu para el usuario
             System.out.println("\n=====BIENVENIDOS A SU CALCULADORA EN JAVA =====");
             System.out.println("1. Suma");
             System.out.println("2. Resta");
@@ -25,6 +29,7 @@ public class Main {
                     case 2:
                     case 3:
                     case 4:
+                        //captura 2 numeros para las operaciones que necesitan solo 2 numerps
                         System.out.print("Ingrese el primer número: ");
                         Numero n1 = new Numero(scanner.nextDouble());
                         System.out.print("Ingrese el segundo número: ");
